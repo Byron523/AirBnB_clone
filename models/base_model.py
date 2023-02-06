@@ -15,4 +15,12 @@ class BaseModel:
 
     def __str__(self):
         """ This method prints dict, id and class """
-        
+        #TODO
+
+    def save(self):
+        """ Updates the updated_at instance """
+        #TODO
+
+    def to_dict(self):
+        """ Return dicts containing keys/values """
+        #TODO
