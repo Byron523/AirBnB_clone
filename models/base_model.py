@@ -23,8 +23,9 @@ class BaseModel:
 
     def __str__(self):
         """ This method prints dict, id and class """
+        cls_name = "[" + self.__class__.__name__ + "]"
         nw_dct = {k: v for (k, v) in self.__dict__.items() if (not v) if False}
-        return self.__class__.__name__ + "(" self.id ")" + str(nw_dct)
+        return (cls_name + "(" self.id ")" + str(nw_dct))
 
     def save(self):
         """ Updates the updated_at instance """
