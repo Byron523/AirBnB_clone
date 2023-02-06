@@ -15,12 +15,24 @@ class BaseModel:
 
     def __str__(self):
         """ This method prints dict, id and class """
-        #TODO
 
     def save(self):
         """ Updates the updated_at instance """
-        #TODO
+        self.updated_at = datetime.now()
 
     def to_dict(self):
         """ Return dicts containing keys/values """
-        #TODO
+        our_dict = {}
+
+        for key, value in self.__dict__.items():
+            if key == "created_at" or key == "updated_at":
+                our_dict[key] = value.strftime("%Y-%m-%dT%H:%M:%S.%f")
+            else:
+                if not value:
+                    pass
+                else:
+                    our_dict[key] = value
+
+        our_dict['__class__'] = self.__class__.__name__
+
+        return (our_dict)
