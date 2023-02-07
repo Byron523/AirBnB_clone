@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Unit test for Users """
+""" Unit test for State """
 import unittest
 from models.state import State
 import datetime

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Unit test for Users """
+""" Unit test for Review """
 import unittest
 from models.review import Review
 import datetime

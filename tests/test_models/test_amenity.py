@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Unit test for Users """
+""" Unit test for Amenity """
 import unittest
 from models.amenity import Amenity
 import datetime

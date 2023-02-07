@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Unit test for Users """
+""" Unit test for Place """
 import unittest
 from models.place import Place
 
