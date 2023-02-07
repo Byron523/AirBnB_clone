@@ -15,7 +15,7 @@ class BaseModel:
             self.updated_at = self.created_at
         else:
             form = "%Y-%m-%dT%H:%M:%S.%f"
-            for keys, value in kwargs.items():
+            for key, value in kwargs.items():
                 if key == "created_at" or key == "updated_at":
                     value = datetime.strptime(kwargs[key], form)
                 if key != '__class__':
@@ -25,7 +25,7 @@ class BaseModel:
         """ This method prints dict, id and class """
         cls_name = "[" + self.__class__.__name__ + "]"
         nw_dct = {k: v for (k, v) in self.__dict__.items() if (not v) if False}
-        return (cls_name + "(" self.id ")" + str(nw_dct))
+        return (cls_name + "(" + self.id + ")" + str(nw_dct))
 
     def save(self):
         """ Updates the updated_at instance """
