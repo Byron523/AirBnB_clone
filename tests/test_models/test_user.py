@@ -28,7 +28,7 @@ class TestUser(unittest.TestCase):
         self.assertTrue(hasattr(self.user1, 'created_at'))
         self.assertTrue(hasattr(self.user1, 'updated_at'))
 
-    def test_ifHas_attributes(self):
+    def test_if_has_attributes(self):
         """ this class tests if user has the attributes and is correct """
         self.asserIsInstance(self.user1.first_name, str)
         self.asserIsInstance(self.user1.last_name, str)
