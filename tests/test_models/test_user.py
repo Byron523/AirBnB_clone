@@ -30,13 +30,13 @@ class TestUser(unittest.TestCase):
 
     def test_if_has_attributes(self):
         """ this class tests if user has the attributes and is correct """
-        self.asserIsInstance(self.user1.first_name, str)
-        self.asserIsInstance(self.user1.last_name, str)
-        self.asserIsInstance(self.user1.email, str)
-        self.asserIsInstance(self.user1.id, str)
-        self.asserIsInstance(self.user1.password, str)
-        self.asserIsInstance(self.user1.created_at, datetime.datetime)
-        self.asserIsInstance(self.user1.updated_at, datetime.datetime)
+        self.assertIsInstance(self.user1.first_name, str)
+        self.assertIsInstance(self.user1.last_name, str)
+        self.assertIsInstance(self.user1.email, str)
+        self.assertIsInstance(self.user1.id, str)
+        self.assertIsInstance(self.user1.password, str)
+        self.assertIsInstance(self.user1.created_at, datetime.datetime)
+        self.assertIsInstance(self.user1.updated_at, datetime.datetime)
 
 
 if __name__ == '__main__':

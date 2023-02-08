@@ -22,17 +22,17 @@ class TestCity(unittest.TestCase):
         """ method checks if class City has all the attributes """
         self.assertTrue(hasattr(self.city1, 'id'))
         self.assertTrue(hasattr(self.city1, 'state_id'))
-        self.assertTrue(hasattr(self.city1, 'city_name'))
+        self.assertTrue(hasattr(self.city1, 'name'))
         self.assertTrue(hasattr(self.city1, 'created_at'))
         self.assertTrue(hasattr(self.city1, 'updated_at'))
 
     def test_ifHas_attributes(self):
         """ this class tests if City has the attributes and is correct """
-        self.asserIsInstance(self.city1.id, str)
-        self.asserIsInstance(self.city1.state_id, str)
-        self.asserIsInstance(self.city1.city_name, str)
-        self.asserIsInstance(self.city1.created_at, datetime.datetime)
-        self.asserIsInstance(self.city1.updated_at, datetime.datetime)
+        self.assertIsInstance(self.city1.id, str)
+        self.assertIsInstance(self.city1.state_id, str)
+        self.assertIsInstance(self.city1.name, str)
+        self.assertIsInstance(self.city1.created_at, datetime.datetime)
+        self.assertIsInstance(self.city1.updated_at, datetime.datetime)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ from models.amenity import Amenity
 import datetime
 
 
-class TestUser(unittest.TestCase):
+class TestAmenity(unittest.TestCase):
     """ Tests instance and methods from Class Amenity """
 
     a = Amenity()
@@ -27,10 +27,10 @@ class TestUser(unittest.TestCase):
 
     def test_ifHas_attributes(self):
         """ this class tests if amenity has the attributes and is correct """
-        self.asserIsInstance(self.a.id, str)
-        self.asserIsInstance(self.a.updated_at, datetime.datetime)
-        self.asserIsInstance(self.a.created_at, datetime.datetime)
-        self.asserIsInstance(self.a.name, str)
+        self.assertIsInstance(self.a.id, str)
+        self.assertIsInstance(self.a.updated_at, datetime.datetime)
+        self.assertIsInstance(self.a.created_at, datetime.datetime)
+        self.assertIsInstance(self.a.name, str)
 
 
 if __name__ == '__main__':
