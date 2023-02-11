@@ -20,7 +20,7 @@ class BaseModel:
             for key, value in kwargs.items():
                 if key == 'created_at':
                     self.__dict__['created_at'] = datetime.strptime(
-                             kwargs.get('created_at'), self.format_date)
+                             kwargs.get('created_at'), self.form)
                 elif 'updated_at' == key:
                     self.__dict__['updated_at'] = datetime.strptime(
                              kwargs.get('updated_at'), self.form)
