@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ A Python interpreter (shell like) """
-import cmd, sys
+import cmd
+import sys
 import json
 import shlex
 
