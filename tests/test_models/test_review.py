@@ -5,7 +5,7 @@ from models.review import Review
 import datetime
 
 
-class TestUser(unittest.TestCase):
+class TestReview(unittest.TestCase):
     """ Tests instance and methods from Class user """
 
     r1 = Review()
@@ -29,12 +29,12 @@ class TestUser(unittest.TestCase):
 
     def test_ifHas_attributes(self):
         """ this class tests if user has the attributes and is correct """
-        self.asserIsInstance(self.r1.id, str)
-        self.asserIsInstance(self.r1.updated_at, datetime.datetime)
-        self.asserIsInstance(self.r1.created_at, datetime.datetime)
-        self.asserIsInstance(self.r1.user_id, str)
-        self.asserIsInstance(self.r1.place_id, str)
-        self.asserIsInstance(self.r1.text, str)
+        self.assertIsInstance(self.r1.id, str)
+        self.assertIsInstance(self.r1.updated_at, datetime.datetime)
+        self.assertIsInstance(self.r1.created_at, datetime.datetime)
+        self.assertIsInstance(self.r1.user_id, str)
+        self.assertIsInstance(self.r1.place_id, str)
+        self.assertIsInstance(self.r1.text, str)
 
 
 if __name__ == '__main__':

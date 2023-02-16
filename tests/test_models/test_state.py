@@ -27,10 +27,10 @@ class TestState(unittest.TestCase):
 
     def test_ifHas_attributes(self):
         """ this class tests if user has the attributes and is correct """
-        self.asserIsInstance(self.s1.id, str)
-        self.asserIsInstance(self.s1.updated_at, str)
-        self.asserIsInstance(self.s1.created_at, str)
-        self.asserIsInstance(self.s1.name, str)
+        self.assertIsInstance(self.s1.id, str)
+        self.assertIsInstance(self.s1.updated_at, datetime.datetime)
+        self.assertIsInstance(self.s1.created_at, datetime.datetime)
+        self.assertIsInstance(self.s1.name, str)
 
 
 if __name__ == '__main__':
